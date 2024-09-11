@@ -17,6 +17,9 @@ const Header = () => {
           <Nav />
           <Link href="/contact" className="ml-5">
             <Button>Hire me</Button>
+            <button className="ml-5 rounded-xl bg-neon px-2 py-1 text-black">
+              English
+            </button>
           </Link>
         </div>
 
