@@ -57,12 +57,19 @@ const about = {
 
 const experience = {
   title: "My Experience",
-  description:
-    "Not a lot of experience but I can make your web app, that's important.",
+  description: [
+    "Designed and developed a responsive web application for an Optical Business using Figma, React and Next Js, following Scrum methodology.",
+    "Implemented a role-based authientication system supporting 4 distinct user roles with corresponding dashboards.",
+    "Integrated RESTful APIs using axios and fetch for robust user authientication and authorization.",
+    "Creafted modern, responsive UI components utilizing Tailwind CSS, Shadcn/ui and Bootstrap.",
+    "Mantained clean, version-controlled code through GitHub, ensuring collaborative development and code quality.",
+    "Created comprehensive technical documentation and user manuals for seamless application handover.",
+    "Participated in regular sprint planning, daily stand-ups and retrospectives as part of an agile development team.",
+  ],
   items: [
     {
       company: "ICEI TECH SRL",
-      position: "Front End Developer",
+      position: "Front End Developer Internship",
       duration: "2024/03 - Present",
     },
   ],
@@ -176,11 +183,15 @@ const Resume = () => {
           <div className="min-h-[70vh] w-full">
             {/* experience */}
             <TabsContent value="experience" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <div className="flex flex-col gap-[20px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="mx-auto max-w-[600px] text-white/70 xl:mx-0">
-                  {experience.description}
-                </p>
+
+                <ul className="mx-auto max-w-[600px] list-disc text-white/70 xl:mx-0">
+                  {experience.description.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+
                 <ScrollArea className="h-[40px]">
                   <ul className="grid grid-cols-1 gap-[30px]">
                     {experience.items.map((item, index) => {
