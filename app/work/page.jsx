@@ -103,12 +103,15 @@ const Work = () => {
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="flex flex-row items-center"
                 >
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="group flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white/5">
                         <BsArrowUpRight className="text-3xl text-white group-hover:text-neon-yellow" />
+                        
                       </TooltipTrigger>
+                      <span className="hover:text-neon-yellow ">Click to see the project</span>
                       <TooltipContent>
                         <p>Live project</p>
                       </TooltipContent>
