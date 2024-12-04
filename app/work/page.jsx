@@ -46,7 +46,7 @@ const projects = [
     description: "This web page was for practice using some libraries",
     stack: [{ name: "Html 5" }, { name: "Css3" }, { name: "Javascript" }],
     image: "/imagesweb/code.png",
-    live: "https://tiopotter/.netlify.app",
+    live: "https://tiopotter9.netlify.app",
   },
   {
     num: "04",
